@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<spriteList>
+		<sprite key="DeadMario" textureName="MarioSprites\\NormalMario\\DeadMario" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftJumpNormal" textureName="MarioSprites\\NormalSize\\GrayscaleLeftJumpNormal" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftFallNormal" textureName="MarioSprites\\NormalSize\\GrayscaleLeftJumpNormal" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftRunNormal" textureName="MarioSprites\\NormalSize\\GrayscaleLeftRunNormal" rows="1" columns="4"></sprite>
+		<sprite key="MarioLeftStandNormal" textureName="MarioSprites\\NormalSize\\GrayscaleLeftStandNormal" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftCrouchNormal" textureName="MarioSprites\\NormalSize\\GrayscaleLeftStandNormal" rows="1" columns="1"></sprite>
+		
+		<sprite key="MarioRightJumpNormal" textureName="MarioSprites\\NormalSize\\GrayscaleRightJumpNormal" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFallNormal" textureName="MarioSprites\\NormalSize\\GrayscaleRightJumpNormal" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightRunNormal" textureName="MarioSprites\\NormalSize\\GrayscaleRightRunNormal" rows="1" columns="4"></sprite>
+		<sprite key="MarioRightStandNormal" textureName="MarioSprites\\NormalSize\\GrayscaleRightStandNormal" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightCrouchNormal" textureName="MarioSprites\\NormalSize\\GrayscaleRightStandNormal" rows="1" columns="1"></sprite>
+		
+		<sprite key="MarioLeftCrouchSuper" textureName="MarioSprites\\BigSize\\GrayscaleLeftCrouchBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftJumpSuper" textureName="MarioSprites\\BigSize\\GrayscaleLeftJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftFallSuper" textureName="MarioSprites\\BigSize\\GrayscaleLeftJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftRunSuper" textureName="MarioSprites\\BigSize\\GrayscaleLeftRunBig" rows="1" columns="4"></sprite>
+		<sprite key="MarioLeftStandSuper" textureName="MarioSprites\\BigSize\\GrayscaleLeftStandBig" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioRightCrouchSuper" textureName="MarioSprites\\BigSize\\GrayscaleRightCrouchBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightJumpSuper" textureName="MarioSprites\\BigSize\\GrayscaleRightJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFallSuper" textureName="MarioSprites\\BigSize\\GrayscaleRightJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightRunSuper" textureName="MarioSprites\\BigSize\\GrayscaleRightRunBig" rows="1" columns="4"></sprite>
+		<sprite key="MarioRightStandSuper" textureName="MarioSprites\\BigSize\\GrayscaleRightStandBig" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftCrouchFire" textureName="MarioSprites\\BigSize\\GrayscaleLeftCrouchBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftJumpFire" textureName="MarioSprites\\BigSize\\GrayscaleLeftJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftFallFire" textureName="MarioSprites\\BigSize\\GrayscaleLeftJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftRunFire" textureName="MarioSprites\\BigSize\\GrayscaleLeftRunBig" rows="1" columns="4"></sprite>
+		<sprite key="MarioLeftStandFire" textureName="MarioSprites\\BigSize\\GrayscaleLeftStandBig" rows="1" columns="1"></sprite>
+		
+		<sprite key="MarioRightCrouchFire" textureName="MarioSprites\\BigSize\\GrayscaleRightCrouchBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightJumpFire" textureName="MarioSprites\\BigSize\\GrayscaleRightJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFallFire" textureName="MarioSprites\\BigSize\\GrayscaleRightJumpBig" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightRunFire" textureName="MarioSprites\\BigSize\\GrayscaleRightRunBig" rows="1" columns="4"></sprite>
+		<sprite key="MarioRightStandFire" textureName="MarioSprites\\BigSize\\GrayscaleRightStandBig" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftFlagNormal" textureName="MarioSprites\\NormalMario\\LeftFlagNormal" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFlagNormal" textureName="MarioSprites\\NormalMario\\RightFlagNormal" rows="1" columns="1"></sprite>
+		
+		<sprite key="MarioLeftFlagSuper" textureName="MarioSprites\\SuperMario\\LeftFlagSuper" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFlagSuper" textureName="MarioSprites\\SuperMario\\RightFlagSuper" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftFlagDoctor" textureName="MarioSprites\\SuperMario\\LeftFlagSuper" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFlagDoctor" textureName="MarioSprites\\SuperMario\\RightFlagSuper" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftFlagFire" textureName="MarioSprites\\FireMario\\LeftFlagFire" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFlagFire" textureName="MarioSprites\\FireMario\\RightFlagFire" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftShootFire" textureName="MarioSprites\\FireMario\\LeftShootFire" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightShootFire" textureName="MarioSprites\\FireMario\\RightShootFire" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadRightStandDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftStandDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftRunDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightRunDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftJumpDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightJumpDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftFallDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFallDead" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+		<sprite key="DeadToad" textureName="ToadSprites\\NormalSize\\GrayscaleDeadToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftJumpNormal" textureName="ToadSprites\\NormalSize\\GrayscaleLeftJumpNormalToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftFallNormal" textureName="ToadSprites\\NormalSize\\GrayscaleLeftJumpNormalToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftRunNormal" textureName="ToadSprites\\NormalSize\\GrayscaleLeftRunNormalToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadLeftStandNormal" textureName="ToadSprites\\NormalSize\\GrayscaleLeftStandNormalToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftCrouchNormal" textureName="ToadSprites\\NormalSize\\GrayscaleLeftStandNormalToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadRightJumpNormal" textureName="ToadSprites\\NormalSize\\GrayscaleRightJumpNormalToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFallNormal" textureName="ToadSprites\\NormalSize\\GrayscaleRightJumpNormalToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightRunNormal" textureName="ToadSprites\\NormalSize\\GrayscaleRightRunNormalToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadRightStandNormal" textureName="ToadSprites\\NormalSize\\GrayscaleRightStandNormalToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightCrouchNormal" textureName="ToadSprites\\NormalSize\\GrayscaleRightStandNormalToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftCrouchSuper" textureName="ToadSprites\\BigSize\\GrayscaleCrouchBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftJumpSuper" textureName="ToadSprites\\BigSize\\GrayscaleLeftJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftFallSuper" textureName="ToadSprites\\BigSize\\GrayscaleLeftJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftRunSuper" textureName="ToadSprites\\BigSize\\GrayscaleLeftRunBigToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadLeftStandSuper" textureName="ToadSprites\\BigSize\\GrayscaleLeftStandBigToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadRightCrouchSuper" textureName="ToadSprites\\BigSize\\GrayscaleCrouchBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightJumpSuper" textureName="ToadSprites\\BigSize\\GrayscaleRightJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFallSuper" textureName="ToadSprites\\BigSize\\GrayscaleRightJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightRunSuper" textureName="ToadSprites\\BigSize\\GrayscaleRightRunBigToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadRightStandSuper" textureName="ToadSprites\\BigSize\\GrayscaleRightStandBigToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftCrouchFire" textureName="ToadSprites\\BigSize\\GrayscaleCrouchBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftJumpFire" textureName="ToadSprites\\BigSize\\GrayscaleLeftJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftFallFire" textureName="ToadSprites\\BigSize\\GrayscaleLeftJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftRunFire" textureName="ToadSprites\\BigSize\\GrayscaleLeftRunBigToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadLeftStandFire" textureName="ToadSprites\\BigSize\\GrayscaleLeftStandBigToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadRightCrouchFire" textureName="ToadSprites\\BigSize\\GrayscaleCrouchBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightJumpFire" textureName="ToadSprites\\BigSize\\GrayscaleRightJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFallFire" textureName="ToadSprites\\BigSize\\GrayscaleRightJumpBigToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightRunFire" textureName="ToadSprites\\BigSize\\GrayscaleRightRunBigToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadRightStandFire" textureName="ToadSprites\\BigSize\\GrayscaleRightStandBigToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftShootFire" textureName="ToadSprites\\BigSize\\GrayscaleLeftShootFireToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightShootFire" textureName="ToadSprites\\BigSize\\GrayscaleRightShootFireToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftCrouchDoctor" textureName="ToadSprites\\DoctorToad\\LeftCrouchDoctorToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftJumpDoctor" textureName="ToadSprites\\DoctorToad\\LeftJumpDoctorToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftFallDoctor" textureName="ToadSprites\\DoctorToad\\LeftJumpDoctorToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftRunDoctor" textureName="ToadSprites\\DoctorToad\\LeftRunDoctorToad" rows="1" columns="8"></sprite>
+		<sprite key="ToadLeftStandDoctor" textureName="ToadSprites\\DoctorToad\\LeftStandDoctorToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadRightCrouchDoctor" textureName="ToadSprites\\DoctorToad\\RightCrouchDoctorToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightJumpDoctor" textureName="ToadSprites\\DoctorToad\\RightJumpDoctorToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFallDoctor" textureName="ToadSprites\\DoctorToad\\RightJumpDoctorToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightRunDoctor" textureName="ToadSprites\\DoctorToad\\RightRunDoctorToad" rows="1" columns="8"></sprite>
+		<sprite key="ToadRightStandDoctor" textureName="ToadSprites\\DoctorToad\\RightStandDoctorToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadRightRunMedium" textureName="ToadSprites\\MediumSize\\GrayscaleRightRunMediumToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadRightStandMedium" textureName="ToadSprites\\MediumSize\\GrayscaleRightStandMediumToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightJumpMedium" textureName="ToadSprites\\MediumSize\\GrayscaleRightJumpMediumToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFallMedium" textureName="ToadSprites\\MediumSize\\GrayscaleRightJumpMediumToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftRunMedium" textureName="ToadSprites\\MediumSize\\GrayscaleLeftRunMediumToad" rows="1" columns="4"></sprite>
+		<sprite key="ToadLeftStandMedium" textureName="ToadSprites\\MediumSize\\GrayscaleLeftStandMediumToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftJumpMedium" textureName="ToadSprites\\MediumSize\\GrayscaleLeftJumpMediumToad" rows="1" columns="1"></sprite>
+		<sprite key="ToadLeftFallMedium" textureName="ToadSprites\\MediumSize\\GrayscaleLeftJumpMediumToad" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftFlagNormal" textureName="MarioSprites\\NormalMario\\LeftFlagNormal" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFlagNormal" textureName="MarioSprites\\NormalMario\\RightFlagNormal" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftFlagSuper" textureName="MarioSprites\\SuperMario\\LeftFlagSuper" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFlagSuper" textureName="MarioSprites\\SuperMario\\RightFlagSuper" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftFlagDoctor" textureName="MarioSprites\\SuperMario\\LeftFlagSuper" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFlagDoctor" textureName="MarioSprites\\SuperMario\\RightFlagSuper" rows="1" columns="1"></sprite>
+
+		<sprite key="ToadLeftFlagFire" textureName="MarioSprites\\FireMario\\LeftFlagFire" rows="1" columns="1"></sprite>
+		<sprite key="ToadRightFlagFire" textureName="MarioSprites\\FireMario\\RightFlagFire" rows="1" columns="1"></sprite>
+
+		<sprite key="BrickBlock" textureName="Blocks\\BrickBlock" rows="1" columns="1"></sprite>
+		<sprite key="BrickDebris" textureName="Blocks\\BrickDebris" rows="1" columns="1"></sprite>
+		<sprite key="EmptyBlock" textureName="Blocks\\EmptyBlock" rows="1" columns="1"></sprite>
+		<sprite key="QuestionBlock" textureName="Blocks\\QuestionBlock" rows="1" columns="1"></sprite>
+		<sprite key="GroundBlock" textureName="Blocks\\GroundBlock" rows="1" columns="1"></sprite>
+		<sprite key="SolidBlock" textureName="Blocks\\SolidBlock" rows="1" columns="1"></sprite>
+		<sprite key="SmallPipe" textureName="Blocks\\SmallPipe" rows="1" columns="1"></sprite>
+		<sprite key="MediumPipe" textureName="Blocks\\MediumPipe" rows="1" columns="1"></sprite>
+		<sprite key="LargePipe" textureName="Blocks\\LargePipe" rows="1" columns="1"></sprite>
+		<sprite key="LeftPipe" textureName="Blocks\\LeftPipe" rows="1" columns="1"></sprite>
+		<sprite key="UpConnectingPipe" textureName="Blocks\\Up_Connecting_Pipe" rows="1" columns="1"></sprite>
+		<sprite key="UnderworldBrickBlock" textureName="Blocks\\UnderWorldBrick" rows="1" columns="1"></sprite>
+		<sprite key="UndeworldGround" textureName="Blocks\\UnderWorldGround" rows="1" columns="1"></sprite>
+
+		<sprite key="Flag" textureName="Blocks\\Flag" rows="1" columns="1"></sprite>
+		<sprite key="FlagPole" textureName="Blocks\\Flagpole" rows="1" columns="1"></sprite>
+
+		<sprite key="Coin" textureName="Items\\Coin" rows="1" columns="4"></sprite>
+		<sprite key="FireFlower" textureName="Items\\FireFlower" rows="1" columns="4"></sprite>
+		<sprite key="Mushroom" textureName="Items\\Mushroom" rows="1" columns="1"></sprite>
+		<sprite key="OneUp" textureName="Items\\OneUp" rows="1" columns="1"></sprite>
+		<sprite key="StarPower" textureName="Items\\StarPower" rows="1" columns="4"></sprite>
+		<sprite key="Stethoscope" textureName="Items\\Stethoscope" rows="1" columns="1"></sprite>
+
+		<sprite key="Fireball" textureName="Projectiles\\fireball" rows="1" columns="4"></sprite>
+
+		<sprite key="LeftKoopa" textureName="Enemies\\LeftKoopa" rows="1" columns="2"></sprite>
+		<sprite key="RightKoopa" textureName="Enemies\\RightKoopa" rows="1" columns="2"></sprite>
+		<sprite key="AliveGoomba" textureName="Enemies\\AliveGoomba" rows="1" columns="2"></sprite>
+		<sprite key="StompedGoomba" textureName="Enemies\\StompedGoomba" rows="1" columns="1"></sprite>
+		<sprite key="DeadGoomba" textureName="Enemies\\DeadGoomba" rows="1" columns="1"></sprite>
+		<sprite key="ShellKoopa" textureName="Enemies\\ShellKoopa" rows="1" columns="1"></sprite>
+		<sprite key="DeadKoopa" textureName="Enemies\\DeadKoopa" rows="1" columns="1"></sprite>
+
+		<sprite key="IdleGhost" textureName="Enemies\\IdleGhost" rows="1" columns="6"></sprite>
+		<sprite key="GhostWalkRight" textureName="Enemies\\GhostWalkRight" rows="1" columns="7"></sprite>
+		<sprite key="GhostWalkLeft" textureName="Enemies\\GhostWalkLeft" rows="1" columns="7"></sprite>
+		<sprite key="GhostRunRight" textureName="Enemies\\GhostRunRight" rows="1" columns="7"></sprite>
+		<sprite key="GhostRunLeft" textureName="Enemies\\GhostRunLeft" rows="1" columns="7"></sprite>
+		<sprite key="GhostRightAttack1" textureName="Enemies\\GhostRightAttack1" rows="1" columns="5"></sprite>
+		<sprite key="GhostRightAttack2" textureName="Enemies\\GhostRightAttack2" rows="1" columns="4"></sprite>
+		<sprite key="GhostLeftAttack1" textureName="Enemies\\GhostLeftAttack1" rows="1" columns="5"></sprite>
+		<sprite key="GhostLeftAttack2" textureName="Enemies\\GhostLeftAttack2" rows="1" columns="4"></sprite>
+
+		<sprite key="BigBush" textureName="Backgrounds\\Big_Bush" rows="1" columns="1"></sprite>
+		<sprite key="BigCloud" textureName="Backgrounds\\Big_Cloud" rows="1" columns="1"></sprite>
+		<sprite key="BigHill" textureName="Backgrounds\\Big_Hill" rows="1" columns="1"></sprite>
+		<sprite key="BigTree" textureName="Backgrounds\\Big_Tree" rows="1" columns="1"></sprite>
+		<sprite key="BigWhiteTree" textureName="Backgrounds\\Big_White_Tree" rows="1" columns="1"></sprite>
+		<sprite key="Castle" textureName="Backgrounds\\Castle" rows="1" columns="1"></sprite>
+		<sprite key="Fence" textureName="Backgrounds\\Fence" rows="1" columns="1"></sprite>
+		<sprite key="LittleBush" textureName="Backgrounds\\Little_Bush" rows="1" columns="1"></sprite>
+		<sprite key="LittleCloud" textureName="Backgrounds\\Little_Cloud" rows="1" columns="1"></sprite>
+		<sprite key="LittleHill" textureName="Backgrounds\\Little_Hill" rows="1" columns="1"></sprite>
+		<sprite key="LittleTree" textureName="Backgrounds\\Little_Tree" rows="1" columns="1"></sprite>
+		<sprite key="LittleWhiteTree" textureName="Backgrounds\\Little_White_Tree" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftCrouchDoctor" textureName="MarioSprites\\DoctorMario\\LeftCrouchDoctor" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftJumpDoctor" textureName="MarioSprites\\DoctorMario\\LeftJumpDoctor" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftFallDoctor" textureName="MarioSprites\\DoctorMario\\LeftJumpDoctor" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftRunDoctor" textureName="MarioSprites\\DoctorMario\\LeftRunDoctor" rows="1" columns="8"></sprite>
+		<sprite key="MarioLeftStandDoctor" textureName="MarioSprites\\DoctorMario\\LeftStandDoctor" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioRightCrouchDoctor" textureName="MarioSprites\\DoctorMario\\RightCrouchDoctor" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightJumpDoctor" textureName="MarioSprites\\DoctorMario\\RightJumpDoctor" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFallDoctor" textureName="MarioSprites\\DoctorMario\\RightJumpDoctor" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightRunDoctor" textureName="MarioSprites\\DoctorMario\\RightRunDoctor" rows="1" columns="8"></sprite>
+		<sprite key="MarioRightStandDoctor" textureName="MarioSprites\\DoctorMario\\RightStandDoctor" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioRightRunMedium" textureName="MarioSprites\\MediumSize\\GrayscaleRightRunMedium" rows="1" columns="4"></sprite>
+		<sprite key="MarioRightStandMedium" textureName="MarioSprites\\MediumSize\\GrayscaleRightStandMedium" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightJumpMedium" textureName="MarioSprites\\MediumSize\\GrayscaleRightJumpMedium" rows="1" columns="1"></sprite>
+		<sprite key="MarioRightFallMedium" textureName="MarioSprites\\MediumSize\\GrayscaleRightJumpMedium" rows="1" columns="1"></sprite>
+
+		<sprite key="MarioLeftRunMedium" textureName="MarioSprites\\MediumSize\\GrayscaleLeftRunMedium" rows="1" columns="4"></sprite>
+		<sprite key="MarioLeftStandMedium" textureName="MarioSprites\\MediumSize\\GrayscaleLeftStandMedium" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftJumpMedium" textureName="MarioSprites\\MediumSize\\GrayscaleLeftJumpMedium" rows="1" columns="1"></sprite>
+		<sprite key="MarioLeftFallMedium" textureName="MarioSprites\\MediumSize\\GrayscaleLeftJumpMedium" rows="1" columns="1"></sprite>
+
+	</spriteList>
+</root>

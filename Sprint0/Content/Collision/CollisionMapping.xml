@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Collision>
+	<!-- 
+		<obj> Object1, Object2, Side, Command1, Command2 </obj>
+		Side is chosen from the POV of Object2
+		Command1 is the command that is executed on Object1, Command2 for Object2
+	-->
+
+	<!-- Player/Block collisions	-->
+	<obj>player,block,Top,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,block,Bottom,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceDownCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,block,Left,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,block,Right,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceRightCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<obj>flagPlayer,block,Top,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>flagPlayer,block,Bottom,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceDownCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>flagPlayer,block,Left,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>flagPlayer,block,Right,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceRightCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	
+	<!-- Player/Breakable collisions	-->
+	<obj>player,breakable,Top,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,breakable,Bottom,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceDownCommand,Sprint0.Commands.Collision.PlayerBlockCollision.BlockItemCommand</obj>
+	<obj>player,breakable,Left,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,breakable,Right,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceRightCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- Enemy/Block collisions-->
+	<obj>enemy,block,Top,Sprint0.Commands.Collision.EnemyBlockCollision.GoombaBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>enemy,block,Bottom,Sprint0.Commands.Collision.EnemyBlockCollision.GoombaBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>enemy,block,Left,Sprint0.Commands.Collision.EnemyBlockCollision.GoombaBounceRightCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>enemy,block,Right,Sprint0.Commands.Collision.EnemyBlockCollision.GoombaBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- Player/Enemy collisions-->
+	<obj>player,enemy,Top,Sprint0.Commands.Player.KillEnemyCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,enemy,Bottom,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,enemy,Left,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,enemy,Right,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<obj>player,unkillableEnemy,Top,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,unkillableEnemy,Bottom,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,unkillableEnemy,Left,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,unkillableEnemy,Right,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- Player/Unstompable Enemy collisions-->
+	<obj>player,unstompableEnemy,Top,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,unstompableEnemy,Bottom,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,unstompableEnemy,Left,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,unstompableEnemy,Right,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- Player/Ghost collisions-->
+	<obj>player,ghost,Top,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,ghost,Bottom,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,ghost,Left,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>player,ghost,Right,Sprint0.Commands.Player.TakeDamageCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- Player/FireFlower collisions-->
+	<obj>player,fireflower,Top,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,fireflower,Bottom,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,fireflower,Left,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,fireflower,Right,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- Player/Stethoscope collisions-->
+	<obj>player,stethoscope,Top,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,stethoscope,Bottom,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,stethoscope,Left,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,stethoscope,Right,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- Player/Mushroom collisions-->
+	<obj>player,mushroom,Top,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,mushroom,Bottom,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,mushroom,Left,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,mushroom,Right,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- Player/OneUp collisions-->
+	<obj>player,oneup,Top,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,oneup,Bottom,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,oneup,Left,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,oneup,Right,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- Player/Star collisions-->
+	<obj>player,star,Top,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,star,Bottom,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,star,Left,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,star,Right,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	
+	<!-- Player/Coin collisions-->
+	<obj>player,coin,Top,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,coin,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,coin,Left,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>player,coin,Right,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- Projectile/Block collisions-->
+	<obj>projectile,block,Top,Sprint0.Commands.Collision.ProjectileBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>projectile,block,Bottom,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>projectile,block,Left,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>projectile,block,Right,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- Projectile/Block collisions-->
+	<obj>projectile,breakable,Top,Sprint0.Commands.Collision.ProjectileBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>projectile,breakable,Bottom,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>projectile,breakable,Left,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>projectile,breakable,Right,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- Projectile/Enemy collisions-->
+	<obj>projectile,enemy,Top,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>projectile,enemy,Bottom,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>projectile,enemy,Left,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>projectile,enemy,Right,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- Projectile/Unstompable Enemy collisions-->
+	<obj>projectile,unstompableEnemy,Top,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>projectile,unstompableEnemy,Bottom,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>projectile,unstompableEnemy,Left,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>projectile,unstompableEnemy,Right,Sprint0.Commands.Collision.DieCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	
+	
+	<!-- Player/Flag collisions -->
+	<obj>player,flag,Top,Sprint0.Commands.Player.EnterFlagStateCommand,Sprint0.Commands.Collision.PlayerBlockCollision.SetLevelClearedCommand</obj>
+	<obj>player,flag,Bottom,Sprint0.Commands.Player.EnterFlagStateCommand,Sprint0.Commands.Collision.PlayerBlockCollision.SetLevelClearedCommand</obj>
+	<obj>player,flag,Left,Sprint0.Commands.Player.EnterFlagStateCommand,Sprint0.Commands.Collision.PlayerBlockCollision.SetLevelClearedCommand</obj>
+	<obj>player,flag,Right,Sprint0.Commands.Player.EnterFlagStateCommand,Sprint0.Commands.Collision.PlayerBlockCollision.SetLevelClearedCommand</obj>
+
+	<!-- Player/Warp collisions-->
+	<obj>crouchingPlayer,crouchWarp,Top,Sprint0.Commands.Collision.WarpCollision.PlayerDownPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+	<obj>crouchingPlayer,crouchWarp,Bottom,Sprint0.Commands.Collision.WarpCollision.PlayerUpPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+	<obj>crouchingPlayer,crouchWarp,Left,Sprint0.Commands.Collision.WarpCollision.PlayerRightPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+	<obj>crouchingPlayer,crouchWarp,Right,Sprint0.Commands.Collision.WarpCollision.PlayerLeftPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+
+	<obj>player,runWarp,Top,Sprint0.Commands.Collision.WarpCollision.PlayerDownPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+	<obj>player,runWarp,Bottom,Sprint0.Commands.Collision.WarpCollision.PlayerUpPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+	<obj>player,runWarp,Left,Sprint0.Commands.Collision.WarpCollision.PlayerRightPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+	<obj>player,runWarp,Right,Sprint0.Commands.Collision.WarpCollision.PlayerLeftPipeWarpCommand,Sprint0.Commands.Collision.WarpCollision.WarpCommand</obj>
+
+	<!-- Mushroom/Block collisions -->
+	<obj>mushroom,block,Top,Sprint0.Commands.Collision.ItemBlockCollision.ItemBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>mushroom,block,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>mushroom,block,Left,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>mushroom,block,Right,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<!-- Mushroom/Breakable collisions -->
+	<obj>mushroom,breakable,Top,Sprint0.Commands.Collision.ItemBlockCollision.ItemBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>mushroom,breakable,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>mushroom,breakable,Left,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>mushroom,breakable,Right,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<!-- Star/Block collisions -->
+	<obj>star,block,Top,Sprint0.Commands.Collision.ItemBlockCollision.ItemBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>star,block,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>star,block,Left,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>star,block,Right,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<!-- Star/Breakable collisions -->
+	<obj>star,breakable,Top,Sprint0.Commands.Collision.ItemBlockCollision.ItemBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>star,breakable,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>star,breakable,Left,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>star,breakable,Right,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<!-- OneUp/Block collisions -->
+	<obj>oneup,block,Top,Sprint0.Commands.Collision.ItemBlockCollision.ItemBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>oneup,block,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>oneup,block,Left,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>oneup,block,Right,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<!-- OneUp/Breakable collisions -->
+	<obj>oneup,breakable,Top,Sprint0.Commands.Collision.ItemBlockCollision.ItemBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>oneup,breakable,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>oneup,breakable,Left,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>oneup,breakable,Right,Sprint0.Commands.Collision.ItemBlockCollision.ReverseDirectionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- invulnerable Player/Block collisions	-->
+	<obj>invulnerable,block,Top,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,block,Bottom,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceDownCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,block,Left,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,block,Right,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceRightCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- invulnerable Player/Breakable collisions	-->
+	<obj>invulnerable,breakable,Top,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceUpCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,breakable,Bottom,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceDownCommand,Sprint0.Commands.Collision.PlayerBlockCollision.BlockItemCommand</obj>
+	<obj>invulnerable,breakable,Left,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceLeftCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,breakable,Right,Sprint0.Commands.Collision.PlayerBlockCollision.PlayerBounceRightCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- invulnerable Player/Enemy collisions-->
+	<obj>invulnerable,enemy,Top,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,enemy,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,enemy,Left,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>invulnerable,enemy,Right,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- enemy/invulnerable Player collisions-->
+	<obj>enemy,invulnerable,Top,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>enemy,invulnerable,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>enemy,invulnerable,Left,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+	<obj>enemy,invulnerable,Right,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.NoCollisionCommand</obj>
+
+	<!-- invulnerable Player/FireFlower collisions-->
+	<obj>invulnerable,fireflower,Top,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,fireflower,Bottom,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,fireflower,Left,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,fireflower,Right,Sprint0.Commands.Player.FireflowerCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- invulnerable Player/Stethoscope collisions-->
+	<obj>invulnerable,stethoscope,Top,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,stethoscope,Bottom,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,stethoscope,Left,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,stethoscope,Right,Sprint0.Commands.Player.DoctorCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- invulnerable Player/Mushroom collisions-->
+	<obj>invulnerable,mushroom,Top,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,mushroom,Bottom,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,mushroom,Left,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,mushroom,Right,Sprint0.Commands.Player.SuperCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- invulnerable Player/OneUp collisions-->
+	<obj>invulnerable,oneup,Top,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,oneup,Bottom,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,oneup,Left,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,oneup,Right,Sprint0.Commands.Player.OneUpCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- invulnerable Player/Star collisions-->
+	<obj>invulnerable,star,Top,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,star,Bottom,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,star,Left,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,star,Right,Sprint0.Commands.Player.StarCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+	<!-- invulnerable Player/Coin collisions-->
+	<obj>invulnerable,coin,Top,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,coin,Bottom,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,coin,Left,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+	<obj>invulnerable,coin,Right,Sprint0.Commands.Collision.NoCollisionCommand,Sprint0.Commands.Collision.DieCommand</obj>
+
+</Collision>

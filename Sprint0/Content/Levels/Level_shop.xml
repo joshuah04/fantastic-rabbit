@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<level leftBound="200" rightBound="200" color="Default" nextLevel="Level_8-4" playerX="80" playerY="204">
+		<!-- empty row -->
+		<!-- empty row -->
+		<!-- empty row -->
+		<row>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<backgroundDecor sprite="BigCloud"></backgroundDecor>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<backgroundDecor sprite="LittleCloud"></backgroundDecor>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+		</row>
+		<row>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<flagPole></flagPole>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+		</row>
+		<!-- empty row -->
+		<!-- empty row -->
+		<!-- empty row -->
+		<!-- empty row -->
+		<row>
+			<emptyBlock invis = "1"></emptyBlock>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+		</row>
+		<row>
+			<emptyBlock invis = "1"></emptyBlock>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<shopBlock item ="mushroom" cost ="5"></shopBlock>
+			<empty></empty>
+			<empty></empty>
+			<shopBlock item ="fireflower" cost ="15"></shopBlock>
+			<empty></empty>
+			<empty></empty>
+			<shopBlock item ="oneup" cost ="50"></shopBlock>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+		</row>
+		<row>
+			<emptyBlock invis = "1"></emptyBlock>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+		</row>
+		<row>
+			<emptyBlock invis = "1"></emptyBlock>
+			<empty></empty>
+			<backgroundDecor sprite="BigHill"></backgroundDecor>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+		</row>
+		<row>
+			<emptyBlock invis = "1"></emptyBlock>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<backgroundDecor sprite="LittleHill"></backgroundDecor>
+			<empty></empty>
+			<empty></empty>
+			<backgroundDecor sprite="LittleBush"></backgroundDecor>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<backgroundDecor sprite="BigBush"></backgroundDecor>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+			<solidBlock></solidBlock>
+			<empty></empty>
+			<empty></empty>
+			<empty></empty>
+		</row>
+		<row>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+		</row>
+		<row>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+			<groundBlock texture="GroundBlock"></groundBlock>
+		</row>
+	</level>
+	<warpMappings>
+
+	</warpMappings>
+</root>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<keyboardNode>
+		<command key="W" command="Sprint0.Commands.Player.JumpCommand" playerIndex="0"></command>
+		<command key="A" command="Sprint0.Commands.Player.LeftCommand" playerIndex="0"></command>
+		<command key="S" command="Sprint0.Commands.Player.CrouchCommand" playerIndex="0"></command>
+		<command key="D" command="Sprint0.Commands.Player.RightCommand" playerIndex="0"></command>
+		<command keys="Z" command="Sprint0.Commands.Player.AttackCommand" playerIndex="0"></command>
+
+		<uncommand keys="W" command="Sprint0.Commands.Player.UnjumpCommand" playerIndex="0"></uncommand>
+		<uncommand keys="A" command="Sprint0.Commands.Player.UnmoveCommand" playerIndex="0"></uncommand>
+		<uncommand keys="S" command="Sprint0.Commands.Player.UncrouchCommand" playerIndex="0"></uncommand>
+		<uncommand keys="D" command="Sprint0.Commands.Player.UnmoveCommand" playerIndex="0"></uncommand>
+		<uncommand keys="Z" command="Sprint0.Commands.NoCommand"></uncommand>
+
+		<command keys="Escape" command="Sprint0.Commands.ExitCommand"></command>
+	</keyboardNode>
+</root> 

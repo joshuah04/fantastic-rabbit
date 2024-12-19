@@ -1,0 +1,707 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Content\bin\**" />
+    <EmbeddedResource Remove="Content\bin\**" />
+    <None Remove="Content\bin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\Sound\Level_1-1\01-main-theme-overworld.mp3" />
+    <None Remove="Content\Sound\Level_1-1\06-level-complete.mp3" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Sound\SoundManager.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Content\Backgrounds\Big_Bush.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Big_Cloud.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Big_Hill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Big_Tree.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Big_White_Tree.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Castle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Fence.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Little_Bush.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Little_Cloud.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Little_Hill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Little_Tree.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Backgrounds\Little_White_Tree.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\BlackStar.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\blocks.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\BrickBlock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\BrickDebris.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\Bridge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\CastleBrick.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\CastlePipe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\Castle_Up_Connecting_Pipe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\EmptyBlock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\Flag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\FlagPole.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\GroundBlock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\LargePipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\Lava.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\LavaBlock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\LeftConnectorPipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\LeftPipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\MediumPipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\Moving_Platform.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\QuestionBlock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\SmallPipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\SolidBlock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\UnderWorldBrick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\UnderWorldGround.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\UnderWorldSolid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Blocks\Up_Connecting_Pipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Collision\CollisionMapping.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Content.mgcb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\dragon_turtle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\AliveGoomba.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\DeadGoomba.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostLeftAttack1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostLeftAttack2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostRightAttack1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostRightAttack2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostRunLeft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostRunRight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostWalkLeft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\GhostWalkRight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\IdleGhost.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\DeadKoopa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\Down_Lavaball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\dragon_turtle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\LeftBowserFire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\LeftKoopa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\Left_Bowser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\Left_Buzzy_Beetle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\LegsKoopa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\PiranhaPlant.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\RightBowserFire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\RightKoopa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\Right_Bowser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\Right_Buzzy_Beetle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\Shelled_Buzzy_Beetle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\ShellKoopa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\StompedGoomba.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Enemies\Up_Lavaball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Fire.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Fonts\Font.spritefont">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Fonts\Menu.spritefont">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\GreenStar.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\InputBindings\keyboardCommands.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Items\Coin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Items\FireFlower.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Items\Mushroom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Items\OneUp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Items\StarPower.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Items\Stethoscope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Levels\Level_01_Textures.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Levels\Level_shop.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Levels\Level_1-1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Levels\Level_1-1_Textures.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Levels\Level_8-4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Levels\Level_8-4_Textures.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleLeftCrouchBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleLeftJumpBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleLeftRunBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleLeftStandBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleRightCrouchBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleRightJumpBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleRightRunBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\BigSize\GrayscaleRightStandBig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\LeftCrouchDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\LeftJumpDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\LeftRunDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\LeftStandDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\RightCrouchDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\RightJumpDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\RightRunDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\DoctorMario\RightStandDoctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftCrouchFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftFlagFire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftJumpFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftRunFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftShootFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftStandFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftSwimFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\LeftTurnFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightCrouchFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightFlagFire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightJumpFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightRunFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightShootFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightStandFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightSwimFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\FireMario\RightTurnFire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\DeadMario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\LeftFlagNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\LeftJumpNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\LeftRunNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\LeftStandNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\LeftSwimNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\LeftTurnNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\RightFlagNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\RightJumpNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\RightRunNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\RightStandNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\RightSwimNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalMario\RightTurnNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalSize\GrayscaleLeftJumpNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalSize\GrayscaleLeftRunNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalSize\GrayscaleLeftStandNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalSize\GrayscaleRightJumpNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalSize\GrayscaleRightRunNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\NormalSize\GrayscaleRightStandNormal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\LeftCrouchSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\LeftFlagSuper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\LeftJumpSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\LeftRunSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\LeftStandSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\LeftSwimSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\LeftTurnSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\RightCrouchSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\RightFlagSuper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\RightJumpSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\RightRunSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\RightStandSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\RightSwimSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\MarioSprites\SuperMario\RightTurnSuper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Update="Content\ToadSprites\NormalSize\GrayscaleLeftJumpNormalToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\NormalSize\GrayscaleLeftRunNormalToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\NormalSize\GrayscaleLeftStandNormalToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\NormalSize\GrayscaleRightJumpNormalToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\NormalSize\GrayscaleRightRunNormalToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\NormalSize\GrayscaleRightStandNormalToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+    <None Update="Content\ToadSprites\BigSize\GrayscaleCrouchBigToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\BigSize\GrayscaleLeftJumpBigToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\BigSize\GrayscaleLeftRunBigToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\BigSize\GrayscaleLeftStandBigToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\BigSize\GrayscaleRightJumpBigToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\BigSize\GrayscaleRightRunBigToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\ToadSprites\BigSize\GrayscaleRightStandBigToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	  <None Update="Content\ToadSprites\NormalSize\GrayscaleDeadToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\MediumSize\GrayscaleLeftJumpMediumToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\MediumSize\GrayscaleLeftStandMediumToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\MediumSize\GrayscaleLeftRunMediumToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\MediumSize\GrayscaleRightJumpMediumToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\MediumSize\GrayscaleRightStandMediumToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\MediumSize\GrayscaleRightRunMediumToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\BigSize\GrayscaleRightShootFireToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\BigSize\GrayscaleLeftShootFireToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\LeftCrouchDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\LeftJumpDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\LeftRunDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\LeftStandDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\RightCrouchDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\RightJumpDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\RightRunDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\ToadSprites\DoctorToad\RightStandDoctorToad.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleRightStandMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleRightRunMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleRightJumpMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleRightCrouchMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleLeftStandMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleLeftRunMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleLeftJumpMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Content\MarioSprites\MediumSize\GrayscaleLeftCrouchMedium.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+    <None Update="Content\Fonts\Menu.spritefont">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Normal.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Projectiles\fireball.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\RedStar.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Screen\Button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Screen\gameover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Screen\heart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Screen\mario_bros_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Screen\menu_mushroom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\1-up.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\breakblock.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\bump.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\coin.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\fireball.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\flagpole.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\jump-small.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\jump-super.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\pause.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\pipe.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\powerup.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\powerup_appears.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\smb_world_clear.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\Sounds.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\stage_clear.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\star-wars-theme-song.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	  <None Update="Content\Sound\Level_1-1\castle.mp3">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Content\Sound\Level_1-1\mario.mp3">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+    <None Update="Content\Sound\Level_1-1\stomp.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\toadScreaming.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Sound\Level_1-1\warning.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\star-wars-theme-song.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\Player\Unpressed\" />
+    <Folder Include="Commands\Player\Pressed\" />
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>

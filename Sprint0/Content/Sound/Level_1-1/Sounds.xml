@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<soundList>
+	<sound key="1up" fileName="1-up" />
+	<sound key="breakblock" fileName="breakblock" />
+	<sound key="bump" fileName="bump" />
+	<sound key="coin" fileName="coin" />
+	<sound key="fireball" fileName="fireball" />
+	<sound key="flagpole" fileName="flagpole" />
+	<sound key="jumpSmall" fileName="jump-small" />
+	<sound key="jumpSuper" fileName="jump-super" />
+	<sound key="pause" fileName="pause" />
+	<sound key="pipe" fileName="pipe" />
+	<sound key="powerup" fileName="powerup" />
+	<sound key="powerupAppears" fileName="powerup_appears" />
+	<sound key="stageClear" fileName="stage_clear" />
+	<sound key="stomp" fileName="stomp" />
+	<sound key="toadScreaming" fileName="toadScreaming" />
+	<sound key="warning" fileName="warning" />
+	<sound key="LevelCleared" fileName="smb_world_clear"></sound>
+</soundList>
+
+
